@@ -1,0 +1,11 @@
+[package]
+name = "gd_sniffer"
+version = "0.1.0"
+authors = ["Cos8o <help.ps.cos8o@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+winapi = { version = "*", features = ["minwindef", "minwinbase", "winnt", "consoleapi", "libloaderapi", "memoryapi", "processthreadsapi", "winsock2"] }
+
+[lib]
+crate-type = ["cdylib"]
